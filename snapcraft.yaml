@@ -22,10 +22,12 @@ parts:
     source: https://github.com/juju/terms-client.git
     source-tag: v1.0.1
     source-type: git
+    build-packages: [bzr]
   charm-tools:
     plugin: python2
     source: https://github.com/juju/charm-tools.git
     source-branch: master
+    build-packages: [gcc]
     stage-packages:
       - python-launchpadlib
       - bzr
